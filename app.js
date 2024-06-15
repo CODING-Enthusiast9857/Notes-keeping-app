@@ -33,7 +33,7 @@ connectDB();
 
 // Static Files
 app.use(express.static('public'));
-
+   
 // Templating Engine
 app.use(expressLayouts);
 app.set('layout', './layouts/main');
