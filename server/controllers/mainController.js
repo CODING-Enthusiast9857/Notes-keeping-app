@@ -4,7 +4,7 @@
 */
 exports.homepage = async (req, res) => {
   const locals = {
-    title: "NodeJs Notes",
+    title: "EasyNote",
     description: "Free NodeJS Notes App.",
   }
   res.render('index', {
@@ -20,8 +20,24 @@ exports.homepage = async (req, res) => {
 */
 exports.about = async (req, res) => {
   const locals = {
-    title: "About - NodeJs Notes",
+    title: "About - EasyNote",
     description: "Free NodeJS Notes App.",
   }
   res.render('about', locals);
+}
+
+exports.features = async (req,res) => {
+  const locals = {
+    title: "Features - EasyNote",
+    description: "Free NodeJS Notes App.",
+  }
+  res.render('features', locals);
+}
+
+exports.faqs = async (req, res) => {
+  const locals = {
+    title: "FAQs - EasyNote",
+    description: "Free NodeJS Notes App.",
+  }
+  res.render('faqs', locals);
 }
